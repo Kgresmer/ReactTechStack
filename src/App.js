@@ -4,6 +4,7 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducers from './reducers';
 import {Header} from './components/common'
+import LibraryList from "./components/LibraryList";
 
 export default class App extends Component<{}> {
     render() {
@@ -11,7 +12,7 @@ export default class App extends Component<{}> {
             <Provider store={createStore(reducers)}>
                 <View style={styles.container}>
                     <Header headerText="Redux Learning"/>
-
+                    <LibraryList />
                 </View>
             </Provider>
         );
