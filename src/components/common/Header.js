@@ -15,11 +15,11 @@ const styles = {
         fontSize: 20
     },
     viewStyle: {
+        backgroundColor: '#F8F8F8',
+        justifyContent: 'center',
+        alignItems: 'center',
         height: 50,
         margin: 5,
-        backgroundColor: '#F8F8F8',
-        alignItems: 'center',
-        justifyContent: 'center',
         shadowColor: '#000000',
         shadowOffset: { width: 0, height: 10 }, //IOS
         shadowOpacity: 0.9,
