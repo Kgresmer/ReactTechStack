@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { ListView } from 'react-native';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {ListView, View} from 'react-native';
 import ListItem from './ListItem';
 
 class LibraryList extends Component {
@@ -14,13 +14,14 @@ class LibraryList extends Component {
     }
 
     renderRow(library) {
-        return <ListItem library={library} />
+        return <ListItem library={library}/>
     }
 
     render() {
         //this.props contains libraries now
         return (
             <ListView
+                style={{alignSelf: 'stretch'}}
                 dataSource={this.dataSource}
                 renderRow={this.renderRow}
             />
